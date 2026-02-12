@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crystal Store</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background-attachment: fixed;
+  color: white;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: 3px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* PRODUCT CARD */
+.product {
+  background: rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 20px;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 30px rgba(0, 200, 255, 0.2);
+  transition: 0.4s ease;
+}
+
+.product:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.6);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.product h2 {
+  margin: 10px 0;
+}
+
+.product p {
+  opacity: 0.8;
+}
+
+/* BUTTON */
+.order-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(45deg, #00f5ff, #00aaff);
+  box-shadow: 0 0 15px rgba(0,255,255,0.7);
+  transition: 0.3s;
+}
+
+.order-button:hover {
+  box-shadow: 0 0 25px rgba(0,255,255,1);
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  opacity: 0.6;
+  font-size: 0.9em;
+}
+</style>
+</head>
+
+<body>
+
+<header>Crystal Store</header>
+
+<div class="container">
+
+  <div class="product">
+    <img src="https://via.placeholder.com/400x250.png?text=Crystal+Ship" alt="Кораблик">
+    <h2>Прозорий кораблик</h2>
+    <p>Ручна мініатюра з кристальним ефектом та світловими відблисками.</p>
+    <a class="order-button" href="https://docs.google.com/forms/d/e/ТУТ_ВАШ_ID_FORM/viewform" target="_blank">
+      Замовити
+    </a>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/400x250.png?text=Crystal+Plane" alt="Літачок">
+    <h2>Прозорий літачок</h2>
+    <p>Легкий, стильний, мінімалістичний дизайн ручної роботи.</p>
+    <a class="order-button" href="https://docs.google.com/forms/d/e/ТУТ_ВАШ_ID_FORM/viewform" target="_blank">
+      Замовити
+    </a>
+  </div>
+
+</div>
+
+<footer>
+© 2026 Crystal Store | Handmade collection
+</footer>
+
+</body>
+</html>
